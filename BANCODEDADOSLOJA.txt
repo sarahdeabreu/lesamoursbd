@@ -1,0 +1,55 @@
+create database lesamours;
+use lesamours;
+
+create table perfume( 
+idfume int not null, 
+perfume varchar (30), 
+preco decimal (7,2) 
+);
+
+insert into perfume values (1,'La Vie Est Belle',550.00);
+insert into perfume values(2,'La Voeur',700.00);
+insert into perfume values (3,'Coco Mademoiselle',999.50);
+
+
+create table flores( 
+idflw int not null, 
+flor varchar (30), 
+preco decimal (7,2) 
+);
+
+insert into flores values(1,'Buque de Crisântemos',30.00);
+insert into flores values(2,'Vaso Grande de Bromélias',80.00);
+insert into flores values(3,'Arranjo de Copos-de-Leite',65.00);
+
+
+create table livros( 
+idbooks int not null, 
+livro varchar (60), 
+preco decimal (7,2) 
+);
+
+insert into livros values(1,'Gustav Klimt: Drawings and Paintings',850.00);
+insert into livros values(2,'The Costume History: From Ancient Times to the 19th Century',235.00);
+insert into livros values(3,'Monet or the Triumph of Impressionism',199.00);
+
+
+create table cliente( 
+idcli int not null, 
+nome varchar (35), 
+desconto decimal (7,2) 
+);
+
+insert into cliente values (1000,'Ary',0.6);
+insert into cliente values (2000,'Léo',0.7);
+insert into cliente values (3000,'Jully',0.8);
+
+
+create table vendedores( 
+id_ven int not null, 
+nome_ven varchar (35), 
+comissao decimal (7,2) 
+);
+insert into vendedores values (10000,'Alice',0.10);
+insert into vendedores values (20000,'Roque',0.5);
+insert into vendedores values (30000,'Vanda',0.8);
